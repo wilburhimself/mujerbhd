@@ -96,7 +96,7 @@ textarea {
     background: #fff url(../img/main-content.png) no-repeat 50% 160%; 
     padding-top: 10px;
     padding-bottom: 20px;
-    height: 390px;
+    height: 360px;
     overflow-x: scroll;
     width: 283px;
     margin: 0 auto;
@@ -147,16 +147,19 @@ h1 {
     text-align: center;
     font-size: 16px;
     color: #f58443;
-    margin-left: 26px;
+    margin-left: 32px;
+    letter-spacing: -1px;
 }
 
 .bottom-ui, .bottom-bar {
     background: url(../img/nav-home.png) no-repeat 50% 0;
     background-size: cover;
     margin-top: -20px;
+    padding-bottom: 1px;
     z-index: 100;
     width: 100%;
-    position: absolute;
+    top: 314px;
+    position: fixed;
     text-align: center;
 }
 .bottom-ui.home  {
