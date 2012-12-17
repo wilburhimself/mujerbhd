@@ -273,11 +273,19 @@ h1 {
 
 
 .business-logo {
+    margin: 0 auto;
+    display: block;
+    width: auto;
+}
+.business-logo.left {
     float: left;
 }
+
 .business-image {
     float: right;
     border: 1px solid #f9ddcd;
+    width: 153px;
+    height: 105px; 
 }
 
 .arrow {
