@@ -28,6 +28,9 @@ select,
 textarea {
     color: #222;
 }
+html, body {
+	height: 100%;
+}
 body {
     font-size: 1em;
     line-height: 1.4;
@@ -90,16 +93,24 @@ textarea {
     background: -ms-linear-gradient(top, #d2d2d2 0%,#ededed 24%,#f9f9f9 42%,#e0e0e0 73%,#d2d2d2 100%); /* IE10+ */
     background: linear-gradient(to bottom, #d2d2d2 0%,#ededed 24%,#f9f9f9 42%,#e0e0e0 73%,#d2d2d2 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2d2d2', endColorstr='#d2d2d2',GradientType=0 ); /* IE6-9 */
+    
 }
 
 .main-content.content {
     background: #fff url(../img/main-content.png) no-repeat 50% 160%; 
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     height: 360px;
     overflow-x: scroll;
     width: 283px;
-    margin: 0 auto;
+    margin: 0 auto -70px;
+    overflow: auto;
+    height: 410px;    
+}
+.main-content.content:after {
+    content: ".";
+    height: 70px;
+    visibility: hidden;
 }
 
 .main-content img.full {
@@ -154,13 +165,12 @@ h1 {
 .bottom-ui, .bottom-bar {
     background: url(../img/nav-home.png) no-repeat 50% 0;
     background-size: cover;
-    margin-top: -20px;
     padding-bottom: 1px;
-    z-index: 100;
     width: 100%;
-    top: 314px;
-    position: fixed;
     text-align: center;
+    height: 70px;
+        position: absolute;
+    z-index: 100000;
 }
 .bottom-ui.home  {
     padding-top: 40px;
@@ -181,7 +191,7 @@ h1 {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-9 */
     border: 1px solid rgba(90, 90, 90, 0.2);
     -webkit-border-radius: 6px;
-    
+
     padding: 2px;
     width: 90%;
     margin: 0 auto 7px;
