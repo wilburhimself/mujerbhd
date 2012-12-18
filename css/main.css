@@ -93,6 +93,7 @@ textarea {
     background: -ms-linear-gradient(top, #d2d2d2 0%,#ededed 24%,#f9f9f9 42%,#e0e0e0 73%,#d2d2d2 100%); /* IE10+ */
     background: linear-gradient(to bottom, #d2d2d2 0%,#ededed 24%,#f9f9f9 42%,#e0e0e0 73%,#d2d2d2 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2d2d2', endColorstr='#d2d2d2',GradientType=0 ); /* IE6-9 */
+    width: 283px;
     
 }
 
